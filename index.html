@@ -411,7 +411,8 @@ button:hover {
     background: #ffffff;
 
     padding: 20px;
-    border-radius: 20px;
+
+        border-radius: 20px;
 
     text-align: center;
 
@@ -790,6 +791,7 @@ iframe {
         <div class="accuracy-text" onclick="showAccuracyDialog()">Increase Accuracy?</div>
 
         <span></span>
+
         <span class="online-users">● Online Users: <span id="online-users"></span></span>
 
     </div>
@@ -940,7 +942,7 @@ iframe {
 
         document.getElementById('game-content').style.display = tab === 'game' ? 'block' : 'none';
 
-        document.getElementById('hack-tab').classList.toggle('active', tab === 'hack');
+    document.getElementById('hack-tab').classList.toggle('active', tab === 'hack');
 
         document.getElementById('game-tab').classList.toggle('active', tab === 'game');
 
@@ -1083,4 +1085,3 @@ let storedResults = {}; // To store results for each period
 </body>
 
 </html>
-        
